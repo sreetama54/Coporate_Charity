@@ -49,7 +49,7 @@ Description: Charityow - Charity & Donation Html Template
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #043F2E;
+  --theme: #c79321;
   --theme2: #C8F168;
   --header: #241442;
   --title: #111111;
@@ -2753,7 +2753,8 @@ span {
   content: "";
   z-index: -1;
   background: var(--theme);
-  background: yellow;
+  background: rgb(212, 147, 101);
+ 
 }
 .breadcrumb-wrapper .shape-image {
   position: absolute;
