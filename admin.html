@@ -300,7 +300,7 @@
                            <div class="contact-form">
                             <div class="contact-form-items">
                         
-                                <form action="contact.php" id="contact-form" method="POST">
+                                <form id="contact-form" method="POST" onsubmit="handleSubmit(event)">
                                     <div class="row g-4">
                                         <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
                                             <div class="form-clt">
@@ -334,7 +334,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-12 wow fadeInUp" data-wow-delay=".4s">
-                                            <button type="submit" class="btn-wrapper wow fadeInUp" data-wow-delay=".5s" onclick="loadAndUpdateCauses()">
+                                            <button type="submit" class="btn-wrapper wow fadeInUp" data-wow-delay=".5s">
                                                 <span class="theme-btn style3">Submit </span> <span class="arrow-btn style2"><i class="fa-solid fa-arrow-up-right"></i></span>
                                             </button>
                                         </div>
@@ -529,7 +529,7 @@
     <script src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/createNewCampaign.js"></script>
+    <script src="assets/js/handle-api-endpoint-on-new-campain.js"></script>
 </body>
 
 </html>

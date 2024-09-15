@@ -28,7 +28,9 @@
 </head>
 
 <body>
-
+<script>function redirectToPaymentGateway() {
+    window.location.href ="payementgateway.html";
+  }</script>
     <!-- Preloader Start -->
     <div id="preloader" class="preloader">
         <div class="animation-preloader">
@@ -238,7 +240,7 @@
                                 </div>
                                 <div class="header-button">
                                     <div class="btn-wrapper wow fadeInUp" data-wow-delay=".5s">
-                                        <a href=" "> <span class="theme-btn style3"> Donate Now
+                                        <a href=" "> <span class="theme-btn style3"> Donate Now im in modall!!
                                             </span><span class="arrow-btn style2"><i
                                                     class="fa-solid fa-arrow-up-right"></i></span></a>
                                     </div>
@@ -270,6 +272,7 @@
                 </div>
                 <div class="page-header">
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
+
                         <li>
                             <a href="index.html">
                                 Home
@@ -320,7 +323,7 @@
                                     </div> 
 
                                     <div class="btn-wrapper mx-auto mt-3 wow fadeInUp" data-wow-delay=".5s"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                         <span class="theme-btn"> Donate Now  </span><span class="arrow-btn"><i class="fa-solid fa-arrow-up-right"></i></span> 
+                                         <span class="theme-btn"> Donate Now!!!  </span><span class="arrow-btn"><i class="fa-solid fa-arrow-up-right"></i></span> 
                                     </div>
 
                                       <!-- Modal -->
@@ -379,9 +382,10 @@
                                                     <div class="mt-3">
                                                         <span>Donation Total:</span> <span class="fw-bold"> $100</span>
                                                     </div>
-                                                    <button type="submit" class="btn-wrapper mt-4" data-bs-dismiss="modal">
-                                                        <span class="theme-btn style3"> Donate Now</span><span class="arrow-btn style2"><i class="fa-solid fa-arrow-up-right"></i></span>
-                                                    </button>
+                                                    <button type="submit" class="btn-wrapper mt-4" data-bs-dismiss="modal" onClick="redirectToPaymentGateway()">
+                                                        <span class="theme-btn style3"> Modal-Donate Now!!</span>
+                                                        <span class="arrow-btn style2"><i class="fa-solid fa-arrow-up-right"></i></span>
+                                                      </button>
                                                 </div>
                                             </div> 
                                         </div>
