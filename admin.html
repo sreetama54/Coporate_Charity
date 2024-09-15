@@ -152,7 +152,7 @@
                             </li>
                         </ul>
                         <div class="header-button mt-4">
-                            <a href="contact.html" class="theme-btn text-center">
+                            <a href="admin.html" class="theme-btn text-center">
                                 <span>Get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
                             </a>
                         </div>
@@ -230,7 +230,7 @@
                                                 </li>
                                                 
                                                 <li>
-                                                    <a class="active" href="contact.html">Contact Us</a>
+                                                    <a class="active" href="admin.html">Admin Page</a>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -265,7 +265,7 @@
             <div class="page-heading">
                 <div class="shape d-none d-xxl-block cir36"><img src="assets/img/shape/breadcumb.svg" alt="shape"></div>
                 <div class="title">
-                    <div class="title-heading wow fadeInLeft" data-wow-delay=".3s">Contact Us</div>
+                    <div class="title-heading wow fadeInLeft" data-wow-delay=".3s">Admin Page</div>
                     <h1 class="wow fadeInLeft" data-wow-delay=".6s">Feel Free to Contact and Reach Us Now !</h1>
                 </div>
                 <div class="page-header">
@@ -279,7 +279,7 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </li>
                         <li>
-                            Contact Us
+                            Admin Page
                         </li>
                     </ul>
                 </div>
@@ -289,8 +289,8 @@
 
 
 
-    <!-- donor-login -->
-    <section class="contact-section fix section-padding">
+    <!-- Contact Section    S T A R T -->
+   <!--  //<section class="contact-section fix section-padding">
         <div class="contact-wrapper">
             <div class="container">
                 <div class="row">
@@ -372,9 +372,77 @@
                 </div>
             </div>
         </div>
+    </section>// -->
+    <style>
+        .contact-section {
+            display: flex; /* Make the section a flex container */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            min-height: 100vh; /* Set minimum height for full viewport */
+        }
+    </style>
+    <section class="contact-section fix section-padding">
+        <div class="contact-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-5">
+                        <div class="contact-info">
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-7">
+                        <div class="contact-form">
+                            <div class="contact-form-items">
+                                <form action="contact.php" id="contact-form" method="POST">
+                                    <div class="row g-4">
+                                        <div class="col-lg-12 wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="form-clt">
+                                                <input type="text" name="donor_name" id="donor_name" placeholder="Donor Name">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-user"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="form-clt">
+                                                <input type="text" name="number" id="number" placeholder="Phone Number">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-phone"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="form-clt">
+                                                <input type="text" name="email" id="email3" placeholder="Email Address">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 wow fadeInUp text-center" data-wow-delay=".4s">
+                                            <button type="submit" class="btn-wrapper wow fadeInUp" data-wow-delay=".5s">
+                                                 <span class="theme-btn style3">submit</span> 
+                                                 <span class="arrow-btn style2">
+                                                     <i class="fa-solid fa-arrow-up-right"></i>
+                                                 </span> 
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <!--end-donor-section-->
+    
+    
+    <!-- Google Map Section    S T A R T -->
+    <div class="office-google-map-wrapper">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd"
+            style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+    </div>
 
     <!-- Footer Section    S T A R T -->
     <footer class="footer-section bg-title">
@@ -425,9 +493,9 @@
                                    
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="admin.html">
                                         <i class="fa-solid fa-chevrons-right"></i>
-                                        Contact Us
+                                        Admin Page
                                     </a>
                                 </li>
                             </ul>
@@ -436,11 +504,11 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".6s">
                         <div class="single-footer-widget">
                             <div class="widget-head">
-                                <h3>Contact Us</h3>
+                                <h3>Admin Page</h3>
                             </div>
                             <ul class="list-area">
                                 <li>
-                                    <a href="contact.html">
+                                    <a href="admin.html">
                                         2972 Westheimer Rd. Santa Ana, Illinois 85486
                                     </a>
                                 </li>
@@ -462,10 +530,10 @@
                             <div class="widget-head">
                                 <h3>Have a Project in Your Mind?</h3>
                             </div>
-                            <a href="contact.html">
+                            <a href="admin.html">
                                 <div class="circle py-5 px-3 w-50 bg-theme2 text-center rounded-circle mb-3">
                                     <span><i class="fa-solid fa-arrow-up-right"></i></span>
-                                    <h4>Contact US</h4>
+                                    <h4>Admin Page</h4>
                                 </div>
                             </a>
 
@@ -486,7 +554,7 @@
                     </p>
                     <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                         <li>
-                            <a class="text-white" href="contact.html">
+                            <a class="text-white" href="admin.html">
                                 Designed By <span class="text-underline text-theme-color2">Exdesigners</span>
                             </a>
                         </li>
