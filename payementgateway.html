@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+<head>
+    <style>
+        /* Global Background Color */
+        body {
+            background-color: rgb(174, 90, 125); /* Same background color as header */
+        }
+
+        .breadcrumb-wrapper {
+            background-color: rgb(174, 90, 125); /* Ensure header keeps the same color */
+        }
+
+        .payment-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .payment-section {
+            background-color: #f7f7f7;
+            padding: 50px 0;
+        }
+
+        .payment-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .submit-btn {
+            background-color: #68eb5c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+
+        .paypal-container {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-section-1">
+        <div class="container">
+            <div id="header-sticky" class="header-1">
+                <div class="container">
+                    <div class="mega-menu-wrapper">
+                        <div class="header-main">
+                            <div class="header-left">
+                                <div class="logo">
+                                    <a href="index.html" class="header-logo">
+                                        <img src="assets/img/logo/white-logo.svg" alt="logo-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-right d-flex justify-content-end align-items-center">
+                                <div class="mean__menu-wrapper">
+                                    <div class="main-menu">
+                                        <nav id="mobile-menu">
+                                            <ul>
+                                                <li>
+                                                    <a href="index.html">
+                                                        Home
+                                                    </a> 
+                                                </li> 
+                                                <li>
+                                                    <a href="about.html">About Us</a>
+                                                </li>
+                                                <li>
+                                                    <a class="active" href="campians.html">
+                                                        Campains
+                                                        <i class="fa-regular fa-plus"></i>
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li><a class="active" href="campians.html">Causes</a></li>
+                                                        <li><a href="causes-details.html">Causes Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-dropdown">
+                                                    <a href="#">
+                                                        Pages
+                                                        <i class="fa-regular fa-plus"></i>
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li class="has-dropdown">
+                                                            <a href="team.html">
+                                                                Our Volunteer
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </a>
+                                                            <ul class="submenu">
+                                                                <li><a href="team.html">Volunteer</a></li>
+                                                                <li><a href="team-details.html">Volunteer Details</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                                        <li><a href="faq.html">Faq's</a></li>
+                                                        <li><a href="error.html">Error Page</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">Blog</a></li>
+                                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="admin.html">Admin Page</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="header-button">
+                                    <div class="btn-wrapper wow fadeInUp" data-wow-delay=".5s">
+                                        <a href="causes-details.html"> <span class="theme-btn style3"> Donate Now
+                                            </span><span class="arrow-btn style2"><i
+                                                    class="fa-solid fa-arrow-up-right"></i></span></a>
+                                    </div>
+                                </div>
+                                <div class="header__hamburger d-xl-block my-auto">
+                                    <div class="sidebar__toggle">
+                                        <i class="fas fa-bars"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb-wrapper" style="background-color: rgb(207, 142, 66);">
+        <div class="container">
+            <div class="page-heading">
+                <div class="shape d-none d-xxl-block cir36"><img src="assets/img/shape/breadcumb.svg" alt="shape"></div>
+                <div class="title">
+                    <div class="title-heading wow fadeInLeft" data-wow-delay=".3s">Causes</div>
+                    <h1 class="wow fadeInLeft" data-wow-delay=".6s">Help & Donate Now Find The Popular Cause</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Causes Section    S T A R T -->
+       <section class="payment-section" style="background-color: rgb(212, 147, 101);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 payment-container">
+                    <h2 class="text-center mb-4">Complete Your Donation</h2>
+
+                    <div class="donation-summary mb-3">
+                        <p><strong>Donation Amount:</strong> £100</p>
+                    </div>
+
+                    <!-- PayPal Integration -->
+                    <div class="paypal-container">
+                        <div id="paypal-button-container"></div>
+                    </div>
+
+                    <!-- Personal Info Form -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Donation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=GBP"></script>
+    <script>
+        paypal.Buttons({
+            createOrder: function (data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '100.00' // donation amount
+                        }
+                    }]
+                });
+            },
+            onApprove: function (data, actions) {
+                return actions.order.capture().then(function (details) {
+                    alert('Donation Successful, Thank you ' + details.payer.name.given_name + '!');
+                });
+            }
+        }).render('#paypal-button-container'); // Renders PayPal button
+    </script>
+</body>
+
+<footer class="footer-section bg-title">
+    <div class="footer-widgets-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="single-footer-widget">
+                        <div class="widget-head">
+                            <a href="index.html">
+                                <img src="assets/img/logo/white-logo.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                            <p>
+                                Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia
+                                curabitur
+                                lacinia mollis
+                            </p>
+                            <div class="social-icon d-flex align-items-center">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="single-footer-widget">
+                        <div class="widget-head">
+                            <h3>About Us</h3>
+                        </div>
+                        <ul class="list-area">
+                            <li>
+                                <a href="team.html">
+                                    <i class="fa-solid fa-chevrons-right"></i>
+                                    Our Team
+                                </a>
+                            </li>
+                            <li>
+                                <a href="campians.html">
+                                    <i class="fa-solid fa-chevrons-right"></i>
+                                    Causes
+                                </a>
+                            </li>
+                            <li>
+                               
+                            </li>
+                            <li>
+                                <a href="admin.html">
+                                    <i class="fa-solid fa-chevrons-right"></i>
+                                    Admin Page
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="single-footer-widget">
+                        <div class="widget-head">
+                            <h3>Admin Page</h3>
+                        </div>
+                        <ul class="list-area">
+                            <li>
+                                <a href="admin.html">
+                                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:308555-0121">
+                                    (308) 555-0121
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:debra.holt@example.com">
+                                    debra.holt@example.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="single-footer-widget">
+                        <div class="widget-head">
+                            <h3>Have a Project in Your Mind?</h3>
+                        </div>
+                        <a href="admin.html">
+                            <div class="circle py-5 px-3 w-50 bg-theme2 text-center rounded-circle mb-3">
+                                <span><i class="fa-solid fa-arrow-up-right"></i></span>
+                                <h4>Admin Page</h4>
+                            </div>
+                        </a>
+
+                        <div class="footer-content">
+                            <p class="mb-1">8am - 8pm</p>
+                            <p>Monday - Sunday</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom bg-title">
+        <div class="container">
+            <div class="footer-wrapper d-flex align-items-center justify-content-between">
+                <p class="wow fadeInLeft" data-wow-delay=".3s">
+                    © All Copyright 2024 by <a href="index.html">Charityow</a>
+                </p>
+                <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
+                    <li>
+                        <a class="text-white" href="admin.html">
+                             <span class="text-underline text-theme-color2"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!--<< All JS Plugins >>-->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!--<< Bootstrap Js >>-->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!--<< Waypoints Js >>-->
+<script src="assets/js/jquery.waypoints.js"></script>
+<!--<< Counterup Js >>-->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--<< Viewport Js >>-->
+<script src="assets/js/viewport.jquery.js"></script>
+<!--<< Tilt Js >>-->
+<script src="assets/js/tilt.min.js"></script>
+<!--<< Swiper Slider Js >>-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+<!--<< MeanMenu Js >>-->
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<!--<< Wow Animation Js >>-->
+<script src="assets/js/wow.min.js"></script>
+<!--<< Main.js >>-->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
