@@ -3,6 +3,7 @@
 <!--<< Header Area >>-->
 
 <head>
+
     <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +26,12 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
+    
+<script src="https://sandbox.paypal.com/sdk/js?client-id=AaUnnf8n4jmtzA6gFunCybYjR_lmE7GY-8SMbGgMJ0jbjtY_eii28dDxs6e3E8WNa4GXzGsDHx7FrOWx&components=buttons"></script>
+
+
 </head>
+
 
 <body>
 <script>function redirectToPaymentGateway() {
@@ -112,8 +118,7 @@
                         </div>
                     </div>
                     <p class="text d-none d-xl-block">
-                        Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
-                        feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                        Proper dignity, before the difficulty, is the fermentation of hate and is always right. A benefit like a lion is self-generated. Avoid imperfection and strive for progress.
                     </p>
                     <div class="mobile-menu fix mb-3"></div>
                     <div class="offcanvas__contact">
@@ -141,7 +146,7 @@
                                     <i class="fal fa-clock"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                    <a target="_blank" href="#">Monday - Sunday, 8am - 8pm</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -315,10 +320,10 @@
                                     <div
                                         class="fund py-3 mb-4 border-bottom  d-flex align-items-center justify-content-between">
                                         <div class="goal">
-                                            <span class="me-1">Goals:</span><span>$6400</span>
+                                            <span class="me-1">Goals:</span><span>£6400</span>
                                         </div>
                                         <div class="raised">
-                                            <span class="me-1">Raised:</span><span>$3700</span>
+                                            <span class="me-1">Raised:</span><span>£3700</span>
                                         </div>
                                     </div> 
 
@@ -327,70 +332,53 @@
                                     </div>
 
                                       <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Donation Form</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="donation-area">
-                                                    <form action="#">
-                                                        <div class="row">
-                                                            <div class="col-lg-12">
-                                                                <div class="donation-form">
-                                                                    <label class="donation-label">$</label>
-                                                                    <input class="form-control left_default_amount" type="number" min="1" value="50" placeholder="$50">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                    <ul class="selectPricing style2">
-                                                        <li class="listItem" data-amount="0">Custom Amount</li>
-                                                        <li class="listItem active" data-amount="20">$20</li>
-                                                        <li class="listItem" data-amount="40">$40</li>
-                                                        <li class="listItem" data-amount="60">$60</li>
-                                                        <li class="listItem" data-amount="80">$80</li>
-                                                        <li class="listItem" data-amount="100">$100</li>
-                                                    </ul>
-
-                                                    <h3 class="title mb-5">Select Payment Method</h3>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Donation Form</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="donation-area">
+                    <form id="donationForm">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="donation-form">
+                                    <label class="donation-label">£</label>
+                                    <input id="customAmount" class="form-control left_default_amount" type="number" min="1" value="50" placeholder="$50">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="selectPricing style2" id="donationList">
+                        <li class="listItem" data-amount="0">Custom Amount</li>
+                        <li class="listItem" data-amount="20">£20</li>
+                        <li class="listItem" data-amount="40">£40</li>
+                        <li class="listItem" data-amount="60">£60</li>
+                        <li class="listItem" data-amount="80">£80</li>
+                        <li class="listItem" data-amount="100">£100</li>
+                    </ul>
+                    <input type="checkbox" id="agreeTerms">
+                    <label for="agreeTerms">Agree to Terms?</label>
+                    <div class="mt-3">
+                        <span>Donation Total:</span> <span id="donationTotal" class="fw-bold">£50</span>
+                    </div>
+                    <h3 class="title mb-5">Select Payment Method</h3>
                                                     <div class="selected-area">
                                                         <input type="checkbox">
-                                                        <label>Test Donation</label>
+                                                        <label>Donate as Employee</label>
                                                         <input  class="ms-3" type="checkbox">
-                                                        <label>Offline Donation</label>
+                                                        <label>Donate as Company</label>
                                                     </div>
-                                                    <h3 class="mt-3">Personal Info</h3>
-                                                    <form class="mb-3" action="#">
-                                                        <div class="row g-2">
-                                                            <div class="col-lg-6"> 
-                                                                <input type="text" placeholder="Your Name"> 
-                                                            </div>
-                                                            <div class="col-lg-6"> 
-                                                                <input type="number" placeholder="Your Phone Number"> 
-                                                            </div>
-                                                            <div class="col-lg-12"> 
-                                                                <input type="email" placeholder="Your email"> 
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                    
-                                                    <input  type="checkbox">
-                                                    <label>Agree to Terms?</label>
-                                                    <div class="mt-3">
-                                                        <span>Donation Total:</span> <span class="fw-bold"> $100</span>
-                                                    </div>
-                                                    <button type="submit" class="btn-wrapper mt-4" data-bs-dismiss="modal" onClick="redirectToPaymentGateway()">
-                                                        <span class="theme-btn style3"> Modal-Donate Now!!</span>
-                                                        <span class="arrow-btn style2"><i class="fa-solid fa-arrow-up-right"></i></span>
-                                                      </button>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                        </div>
-                                    </div>
+
+                    <div id="paypal-button-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
                                     <h3 class="mt-3 pt-5 border-top wow fadeInUp" data-wow-delay=".4s">Education for
                                         children</h3>
@@ -422,18 +410,12 @@
 
                                     <h3 class="mt-4 mb-2 wow fadeInUp" data-wow-delay=".4s">Summary</h3>
                                     <ul class="ms-5" style="list-style-type: square;">
-                                        <li class="">Amet consectetur adipiscing elit Ut et massa mi. Aliquam
-                                            in hendrerit urna.</li>
-                                        <li>Pellentesque sit amet sapien fringilla, mattis ligula
-                                            consectetur, ultrices mauris.</li>
-                                        <li>Maecenas vitae mattis tellus. Nullam quis
-                                            imperdiet augue. Vestibulum auctor ornare leo.</li>
-                                        <li>Consectetur adipiscing elit Ut et massa mi. Aliquam
-                                            in hendrerit urna.</li>
-                                        <li>Pellentesque sit amet sapien fringilla, mattis ligula
-                                            consectetur, ultrices mauris.</li>
-                                        <li>Maecenas vitae mattis tellus. Nullam quis
-                                            imperdiet augue. Vestibulum auctor ornare leo.</li>
+                                        <li class="">Love and care for your body, align yourself with balance. Stand firm, and reach out from the heart..</li>
+                                        <li>Sit comfortably with confidence, as your spirit flourishes, and growth is abundant.</li>
+                                        <li>Live with a mindset of confidence. Do not seek to overpower, but lead. Stand firm in your decisions, and let your actions speak for themselves.</li>
+                                        <li>Adhere to balance and strength. Seek to stand tall and steady. Shape your direction with confidence and purpose.</li>
+                                        <li>Sit with confidence, combining structure and purpose. Balance action with thoughtfulness for growth.</li>
+                                        <li>Live with a foundation of confidence. Do not seek power through aggression. Let your leadership be graceful and consistent.</li>
                                     </ul>
                                     <p class="pt-3 pb-4 border-bottom wow fadeInUp" data-wow-delay="1.2s">
                                         Educated children are more aware of their rights and are better equipped to
@@ -461,10 +443,7 @@
                                                 <a href=" " class="reply">Reply</a>
                                             </div>
                                         </div>
-                                        <p class="mt-10 mb-0">Neque porro est qui dolorem ipsum quia quaed inventor
-                                            veritatis et quasi
-                                            architecto var sed efficitur turpis gilla sed
-                                            sit amet finibus eros. Lorem Ipsum is simply dummy
+                                        <p class="mt-10 mb-0">There is no one who suffers pain because they pursue truth and understanding. The architect of reality brings forth balance and purpose, even in difficult times. Growth follows through action. Lorem Ipsum is simply dummy text.
                                         </p>
                                     </div>
                                 </div>
@@ -483,10 +462,7 @@
                                                 <a href=" " class="reply">Reply</a>
                                             </div>
                                         </div>
-                                        <p class="mt-10 mb-0">Neque porro est qui dolorem ipsum quia quaed inventor
-                                            veritatis et quasi
-                                            architecto var sed efficitur turpis gilla sed
-                                            sit amet finibus eros. Lorem Ipsum is simply dummy
+                                        <p class="mt-10 mb-0">There is no one who suffers pain because they seek the truth and nearly become the architect, but it is made effective by difficult efforts, yet grounded in steady progress.
                                         </p>
                                     </div>
                                 </div>
@@ -540,9 +516,8 @@
                                             <p class="text mt-1">Melbourne, Australia</p>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur. Vestibulum ultrices vulputate sodales
-                                        facilisi duis id. In tristique varius nisl ultricies nunc.In tristique varius
-                                        nisl ultricies nunc</p>
+                                    <p>Vestibulum enhances flexible movement and transitions smoothly. In this case, varied elements are aligned and synchronized effectively, creating a balanced, steady flow.
+                                    </p>
                                     <div class="btn-wrapper mt-4 wow fadeInUp" data-wow-delay=".5s">
                                         <a href="admin.html"> <span class="theme-btn style3"> Admin Page
                                             </span><span class="arrow-btn style2"><i
@@ -568,11 +543,11 @@
                                             <ul>
                                                 <li>
                                                     <span class="text-dark2">Raised: </span> <span class=" fw-bold">
-                                                        $6,400 </span>
+                                                        £6,400 </span>
                                                 </li>
                                                 <li>
                                                     <span class="text-dark2">Goal: </span> <span
-                                                        class="text-black fw-bold">$9,400</span>
+                                                        class="text-black fw-bold">£9,400</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -590,11 +565,11 @@
                                             <ul>
                                                 <li>
                                                     <span class="text-dark2">Raised: </span> <span class=" fw-bold">
-                                                        $3,400 </span>
+                                                        £3,400 </span>
                                                 </li>
                                                 <li>
                                                     <span class="text-dark2">Goal: </span> <span
-                                                        class="text-black fw-bold">$8,400</span>
+                                                        class="text-black fw-bold">£8,400</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -612,11 +587,11 @@
                                             <ul>
                                                 <li>
                                                     <span class="text-dark2">Raised: </span> <span class=" fw-bold">
-                                                        $8,400 </span>
+                                                        £8,400 </span>
                                                 </li>
                                                 <li>
                                                     <span class="text-dark2">Goal: </span> <span
-                                                        class="text-black fw-bold">$10,400</span>
+                                                        class="text-black fw-bold">£10,400</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -644,9 +619,7 @@
                             </div>
                             <div class="footer-content">
                                 <p>
-                                    Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia
-                                    curabitur
-                                    lacinia mollis
+                                    Efficient movement enhances control, while structure remains strong. Careful coordination fosters gentle and flexible growth.
                                 </p>
                                 <div class="social-icon d-flex align-items-center">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -724,8 +697,8 @@
                             </a>
 
                             <div class="footer-content">
-                                <p class="mb-1">09 : 00 AM - 10 : 30 PM</p>
-                                <p>Saturday - Thursday</p>
+                                <p class="mb-1">8am - 8pm</p>
+                                <p>Monday - Sunday</p>
                             </div>
                         </div>
                     </div>
@@ -741,7 +714,7 @@
                     <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
                         <li>
                             <a class="text-white" href="admin.html">
-                                Designed By <span class="text-underline text-theme-color2">Exdesigners</span>
+                                <span class="text-underline text-theme-color2"></span>
                             </a>
                         </li>
                     </ul>
@@ -773,6 +746,83 @@
     <script src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var donationAmount = 50; // Default amount
+            var customAmountInput = document.getElementById('customAmount');
+            var donationListItems = document.querySelectorAll('.selectPricing .listItem');
+            var donationTotalElement = document.getElementById('donationTotal');
+            var agreeTermsCheckbox = document.getElementById('agreeTerms');
+    
+            // Function to update the donation total displayed and stored
+            function updateDonationTotal(amount) {
+                donationAmount = amount;
+                donationTotalElement.textContent = '£' + amount;
+            }
+    
+            // Handle list item selection
+            donationListItems.forEach(function (listItem) {
+                listItem.addEventListener('click', function () {
+                    // Remove 'active' class from all items
+                    donationListItems.forEach(function (item) {
+                        item.classList.remove('active');
+                    });
+    
+                    // Add 'active' class to the clicked item
+                    listItem.classList.add('active');
+    
+                    // Check if 'Custom Amount' is selected
+                    if (listItem.getAttribute('data-amount') === '0') {
+                        customAmountInput.disabled = false;
+                        updateDonationTotal(customAmountInput.value || 50);
+                    } else {
+                        customAmountInput.disabled = true; // Disable custom amount if not selected
+                        var amount = parseFloat(listItem.getAttribute('data-amount'));
+                        updateDonationTotal(amount);
+                    }
+                });
+            });
+    
+            // Handle custom amount input changes
+            customAmountInput.addEventListener('input', function () {
+                if (!customAmountInput.disabled) {
+                    var customAmount = parseFloat(customAmountInput.value) || 50; // Default to 50 if empty
+                    updateDonationTotal(customAmount);
+                }
+            });
+    
+            // PayPal button integration
+            paypal.Buttons({
+                createOrder: function (data, actions) {
+                    if (!agreeTermsCheckbox.checked) {
+                        alert('Please agree to the terms to proceed.');
+                        throw new Error('Terms not agreed.');
+                    }
+    
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: donationAmount.toFixed(2) // Use the selected or custom donation amount
+                            }
+                        }]
+                    });
+                },
+                onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (details) {
+                        alert('Donation successful! Thank you, ' + details.payer.name.given_name);
+                    });
+                },
+                onCancel: function (data) {
+                    alert('Payment cancelled');
+                },
+                onError: function (err) {
+                    console.error('Error occurred:', err);
+                    alert('An error occurred with your donation. Please try again.');
+                }
+            }).render('#paypal-button-container');
+        });
+    </script>
 </body>
 
 </html>
