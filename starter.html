@@ -87,23 +87,6 @@
                 <button type="submit" class="btn btn-primary btn-block">Login as Admin</button>
             </form>
         </div>
-        
-        <script>
-            const loginForm = document.getElementById('loginForm-admin');
-        
-            loginForm.addEventListener('submit', (event) => {
-                event.preventDefault();
-        
-                const adminEmail = document.getElementById('adminEmail').value;
-                const adminPassword = document.getElementById('adminPassword').value;
-        
-                if (adminEmail === 'admin' && adminPassword === 'admin') {
-                    window.location.href = 'admin.html';
-                } else {
-                    alert('Invalid credentials');
-                }
-            });
-        </script>
 
         <!-- Donor Login Section -->
         <div id="donorLogin" class="login-section">
@@ -121,22 +104,6 @@
             </form>
             <a href="#" id="showRegister" class="register-link">Don't have an account? Register here</a>
         </div>
-<script>
-const loginForm_donor=document.getElementById('loginForm-donor')
-loginForm_donor.addEventListener('submit',event=>{
-    event.preventDefault();
-
-    const login_donor_username=document.getElementById('donorEmail').value;
-    const login_donor_password=document.getElementById('donorPassword').value;
-    if (login_donor_username ==='donor' && login_donor_password === 'donor') {
-                    window.location.href = 'index.html';
-                } else {
-                    alert('Invalid credentials');
-                }
-
-})
-
-</script>
         <!-- Donor Registration Section -->
         <div id="donorRegister" class="register-section">
             <h2>Donor Registration</h2>
@@ -165,6 +132,8 @@ loginForm_donor.addEventListener('submit',event=>{
     </div>
 
     <!-- jQuery (required for dynamic changes) -->
+    <script type="module" src="./assets/js/loginadmin.js"></script>
+    <script type="module"src="./assets/js/logindonor.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         // Handle dropdown selection and dynamically show the correct login form
