@@ -1,0 +1,50 @@
+[
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "123-456-7890",
+      "emailAddress": "johndoe@example.com",
+      "newadminId": "unique_id_1" 
+    },
+    {
+      "firstName": "John2",
+      "lastName": "Doe",
+      "phoneNumber": "123-456-7890",
+      "emailAddress": "johndoe2@example.com",
+      "newadminId": "unique_id_2" 
+    },
+    {
+      "firstName": "John3",
+      "lastName": "Doe",
+      "phoneNumber": "123-456-7890",
+      "emailAddress": "johndoe3@example.com",
+      "newadminId": "unique_id_3" },
+    {
+      "firstName": "John3",
+      "lastName": "Doe",
+      "phoneNumber": "123-456-7890",
+      "emailAddress": "johndoe4@example.com",
+      "newadminId": "unique_id_4" 
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "123-456-7890",
+      "emailAddress": "johndoe5@example.com",
+      "newadminId": "unique_id_5" 
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "123-456-7890",
+      "emailAddress": "johndoe6@example.com",
+      "newadminId": "unique_id_6" 
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "123-456-7890",
+      "emailAddress": "johndoe7@example.com",
+      "newadminId": "unique_id_7"
+    }
+  ]
