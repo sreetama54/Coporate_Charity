@@ -15,8 +15,9 @@ loginForm.addEventListener('submit', (event) => {
 
     // Store the data in localStorage
     localStorage.setItem('newAdminData', JSON.stringify(data));
-
-
+    const newAdmindata=localStorage.getItem(newAdminData)
+    console.log('New Admindata',newAdmindata);
+    
      fetch('https://your-api-endpoint.com/submit-data', {
       method: 'POST',
     headers: {

@@ -1,8 +1,8 @@
-import NewDonorInfo from '../data/newDonorInfo.js'
+import {NewDonorInfo} from '../data/newDonorInfo.js'
 
 const donorNames = {
-    company_names: [],
-    individual_names: []
+    company_names: ["dummy_company"],
+    individual_names: ["dummy_indivual"]
 };
 
 // Populate the donorNames object
@@ -13,8 +13,9 @@ NewDonorInfo.forEach(donor => {
         donorNames.individual_names.push(donor.fullName);
     }
 });
+
 // Populate the select field (same as before)
-const donorSelect = document.getElementById("donorName");
+const donorSelect = document.getElementById("registerName");
 
 // Populate the select with company names
 donorNames.company_names.forEach(companyName => {
