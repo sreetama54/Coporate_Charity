@@ -1,8 +1,19 @@
+import NewDonorInfo from '../data/newDonorInfo.js'
+
 const donorNames = {
-    company_names: ["Company A", "Company B", "Company C"],
-    individual_names: ["John Doe", "Jane Smith", "Alice Johnson"]
+    company_names: [],
+    individual_names: []
 };
 
+// Populate the donorNames object
+NewDonorInfo.forEach(donor => {
+    if (donor.isCompany === "true") {
+        donorNames.company_names.push(donor.fullName);
+    } else {
+        donorNames.individual_names.push(donor.fullName);
+    }
+});
+// Populate the select field (same as before)
 const donorSelect = document.getElementById("donorName");
 
 // Populate the select with company names
